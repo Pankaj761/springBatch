@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class DatasourceConfiguration {
 
-	//@Bean
+	@Bean
     @ConfigurationProperties(prefix="spring.seconddatasource")
     public javax.sql.DataSource secondaryDataSource() {
         return DataSourceBuilder.create().build();

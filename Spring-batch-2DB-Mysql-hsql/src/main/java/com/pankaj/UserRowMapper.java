@@ -14,6 +14,8 @@ public class UserRowMapper implements RowMapper<User>{
 		
 		u.setName(rs.getString("first_name"));
 		
+		System.out.println(u.toString());
+		
 		return u;
 	}
 
